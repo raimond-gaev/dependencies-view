@@ -1,0 +1,8 @@
+on: [push]
+
+jobs:
+  test-ssh-connection:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running test
+        run: nc -vz github.com 22
